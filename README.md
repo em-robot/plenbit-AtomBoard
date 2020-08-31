@@ -13,16 +13,16 @@ PLEN:bit用の基板ですがピンの接続先の変更が可能であり、ユ
 
 ## Examples サンプルコードについて
 
-- /examples
-    - PLENAtom M5AtomでPLEN:bitを動かす
-    - PLENAtom_FLed M5AtomのLEDをフルカラーで点灯
-    - PLENAtomENV 環境センサとの組み合わせ
+- `/examples`
+    - `PLENAtom`: M5AtomでPLEN:bitを動かす
+    - `PLENAtom_FLed`: M5AtomのLEDをフルカラーで点灯
+    - `PLENAtomENV`: 環境センサとの組み合わせ
 
 ### プログラム環境
-- ArduinoIDE
+- [ArduinoIDE](https://www.arduino.cc/en/Main/Software)
 ### 必要なライブラリ
-- M5Atom
-- PLEN5Stack
+- [M5Atom](https://github.com/m5stack/M5Atom)
+- [PLEN5Stack](https://github.com/plenprojectcompany/PLEN5Stack)
 
 ## Soldering reference 基板のはんだ付けについて
 ### 図1を参考にヘッダーピンはんだ付けする
@@ -53,6 +53,11 @@ PLEN:bit用の基板ですがピンの接続先の変更が可能であり、ユ
 
 ### その他
 基板裏面真ん中(CN1)にGroveコネクタ向けのスルーホールを設けています。
+
+### 注意点
+- PLEN:bitコントロール基板回路都合上、電流不足によりM5 AtomのLEDが赤しか点灯しない場合がある。
+- 対処法1. PLEN:bitコントロール基板前面の3Vと変換基板3Vをつなげる。
+- 対処法2. 変換基板3V-GND間に電解コンデンサ470u実装
 
 ## About M5 ATOM
 https://github.com/m5stack/M5Atom
