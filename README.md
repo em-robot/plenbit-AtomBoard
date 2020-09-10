@@ -5,6 +5,9 @@ Control PLEN:bit with M5 Atom.
 PLEN:bitをM5ATOMでコントロール。
 PLEN:bitにM5ATOMを取り付け可能にするために変換基板を使用します。
 
+<font size="7" color="">note</font>[記事もどうぞ](https://note.com/plenproject/n/n25fcce5a84e1)
+
+
 ## PLEN:bit用M5ATOM変換基板について
 
 micro:bit型の変換基板にM5ATOMを取り付けでき、それをmicro:bitの代わりにPLEN:bitへ取り付けることで、M5ATOMから制御できるようになります。
